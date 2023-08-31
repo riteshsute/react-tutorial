@@ -7,6 +7,8 @@ function ExpenseItem() {
         </div> 
         <div> 5000</div>
         <br> 
+
+
         </br>
         <div>
             <div> Petrol </div>
@@ -18,6 +20,11 @@ function ExpenseItem() {
             <div> Movie </div>
         </div> 
         <div> 2000 </div>
+
+        <div>
+            <div> Petrol </div>
+        </div> 
+        <div> 10000 </div>
   
     </div>
          
