@@ -1,34 +1,20 @@
 function ExpenseItem() {
+    const ExpenseDate = new Date(2023);
+    const ExpenseCategory = 'Food'
+    const ExpenseAmount = '1000'
+    const ExpenseLocation = 'Delhi'
     return ( 
-    <div> 
-        <div>
-            <h2> Expenses! </h2>
-            <div> Food </div>
+    <div className='expense-item'> 
+        <div> {ExpenseDate.toISOString()} </div>
+        <div className="expense-item_Title">
+            <h3> Category: {ExpenseCategory} </h3>
         </div> 
-        <div> 5000</div>
-        <br> 
-
-
+        <div className="expense-item__amount"> Rs: {ExpenseAmount} </div>
+        <br>
         </br>
-        <div>
-            <div> Petrol </div>
-        </div> 
-        <div> 10000 </div>
-        <br> 
-        </br>
-        <div>
-            <div> Movie </div>
-        </div> 
-        <div> 2000 </div>
-
-        <div>
-            <div> Petrol </div>
-        </div> 
-        <div> 10000 </div>
-  
-    </div>
-         
-    )
+        <div className="expense-item__location"> Place: {ExpenseLocation} </div>
+    </div>    
+    ) 
 }
 
 export default ExpenseItem;
