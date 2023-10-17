@@ -1,0 +1,28 @@
+.expense-date {
+    border: 1px solid #ccc;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    width: 8rem;
+    background-color: rgb(61, 86, 86);;
+    font-size: medium;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: aqua;
+    display: flex;
+}
+
+.expense-date_month {
+    margin-left: 3px;
+    line-height: 41px;
+    color: rgb(21, 219, 136); 
+}
+
+.expense-date_day {
+    color: rgb(21, 219, 136);
+    margin: 10px;
+}
+
+.expense-date_year {
+    line-height: 43px;
+    color: rgb(21, 219, 136);
+}

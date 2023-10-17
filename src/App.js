@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import ExpenseItem from './components/Expenses/ExpenseItem';
+import ExpenseForm from './components/newExpenses/ExpenseForm';
 
 function App() {
   const expenses = [
@@ -14,12 +15,12 @@ function App() {
       id: 'e2',
       title: 'Movie',
       amount: 5000,
-      date: new Date(2023, 3, 12)
+      date: new Date(2023, 2, 12)
     },
     {
       id: 'e3',
       title: 'Travel',
-      amount: 10000,
+      amount: 8000,
       date: new Date(2023, 2, 25)
     }
   ]
@@ -36,21 +37,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> ExpenseItems </h1>
+        <ExpenseForm />
       {/* <ExpenseItem> </ExpenseItem> */}
         {expenseItems}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
