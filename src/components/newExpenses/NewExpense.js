@@ -6,9 +6,17 @@ import ExpenseForm  from "./ExpenseForm";
 
 
 const newExpense = () => {
-    return <div className="new-expense">
-        <ExpenseForm />
-    </div>
-}
 
-export default newExpense
+    const saveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = { 
+            ...enteredExpenseData,
+            id: Math.random().toString()
+        };
+        console.log(expenseData)
+    };
+    return <div className="new-expense">
+        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+    </div>
+};
+
+export default newExpense 

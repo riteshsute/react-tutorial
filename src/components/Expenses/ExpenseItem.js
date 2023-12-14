@@ -9,6 +9,7 @@ function ExpenseItem(props) {
 
     const clickHandler = () => {
         console.log(amount)
+        setamount('100$')
     }
 
 
@@ -19,7 +20,8 @@ function ExpenseItem(props) {
             <div className="expense-item_Title">
                 <h3> Category: {props.title} </h3>
             </div> 
-            <div className="expense-item__amount"> Rs: {props.amount} </div>
+            <div className="expense-item__amount"> Rs: {amount} </div>
+            <button onClick={clickHandler}> update </button>
             <br>
             </br>
             <button onClick={clickHandler}> click </button>
